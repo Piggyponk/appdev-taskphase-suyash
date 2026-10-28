@@ -1,0 +1,136 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+background-color: #F7F4F0;
+font-family: "Inter", system-ui, sans-serif;
+color: #1C1917;
+line-height: 1.6;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+.container {
+max-width: 1080px;
+margin: 0 auto;
+padding: 3rem 5rem 4rem;
+flex : 1;
+}
+
+header { margin-bottom: 3rem; }
+
+.name {
+font-size: 2.75rem;
+font-weight: 700;
+letter-spacing: -0.8px;
+color: #1C1917;
+}
+
+.tagline {
+font-size: 1.1rem;
+color: #0D7377;
+margin-top: 0.4rem;
+font-weight: 500;
+}
+
+.about {
+background: #ffffff;
+border-radius: 8px;
+padding: 2rem 2.25rem;
+margin-bottom: 3rem;
+box-shadow: 0 4px 24px rgba(28, 25, 23, 0.05);
+}
+
+.section-title {
+font-size: 1.25rem;
+font-weight: 600;
+margin-bottom: 0.85rem;
+color: #1C1917;
+}
+
+.about p {
+font-size: 1.05rem;
+color: #44403C;
+}
+
+.projects-header { margin-bottom: 1.5rem; }
+
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 1.5rem;
+}
+
+.project-card {
+background: #ffffff;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 24px rgba(28, 25, 23, 0.05);
+border: 1px solid rgba(28, 25, 23, 0.04);
+transition: all 0.25s ease;
+}
+
+.project-card:hover {
+transform: translateY(-6px);
+box-shadow: 0 16px 40px rgba(28, 25, 23, 0.1);
+}
+
+.project-image {
+height: 10rem;
+background: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgba(255, 255, 255, 0.85)
+font-size: 0.9rem;
+font-weight: 500;
+}
+.project-content { padding: 1.25rem 1.35rem 1.5rem; }
+
+.project-title {
+font-size: 1.15rem;
+font-weight: 600;
+color: #1C1917;
+margin-bottom: 0.3rem;
+}
+
+.project-desc {
+font-size: 0.93rem;
+color: #78716C;
+}
+
+/* Footer */
+footer {
+background: #1C1917;
+color: #F7F4F0;
+padding: 1.75rem 1.5rem;
+}
+
+.footer-content {
+max-width: 1080px;
+margin: 0 auto;
+display: flex;
+justify-content: center;
+gap: 2.75rem;
+flex-wrap: wrap;
+}
+
+.footer-link {
+color: #F7F4F0;
+text-decoration: none;
+font-size: 0.95rem;
+font-weight: 500;
+transition: color 0.2s ease;
+opacity: 0.9;
+}
+
+.footer-link:hover {
+color: #0D7377;
+opacity: 1;
+}
+
+@media (max-width: 800px) {
+.projects-grid { grid-template-columns: 1fr; }
+.name { font-size: 2.2rem; }
+.footer-content { gap: 1.75rem; }
+}
