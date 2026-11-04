@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>todo clone</title>
+  <link rel="stylesheet" href="style.css">
+  <script src = "script.js" defer></script>
+</head>
+<body>
+  <div class="todo-card">
+    <!-- header -->
+    <div class="header">
+      <h1>
+        todo
+        <span id="task-counter">0</span>
+      </h1>
+      <div class="stats" id="stats">0 / 0 done</div>
+    </div>
+
+    <!-- input area -->
+    <div class="input-group">
+      <input type="text" id="todoInput">
+      <button id="addBtn">+</button>
+    </div>
+
+    <!-- dynamic list -->
+    <ul class="todo-list" id="todoList"></ul>
+
+    <!-- footer -->
+  </div>
+
+</body>
+</html>
