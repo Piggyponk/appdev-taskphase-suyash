@@ -1,0 +1,3 @@
+The DOM is an interface for javascript to interact with html web pages, where the web page can be looked at like a tree of elements. Each html element is represented as an object. All the objects that the element encloses are called its children and the element itself is called as the parent. Nodes can have event listeners like "click", "keydown" to trigger actions on user interactions.
+
+https://web.stanford.edu/class/cs98si/slides/the-document-object-model.html
